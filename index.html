@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: #2a180c;
+      font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+      color: #f5f0e6;
+      box-sizing: border-box;
+    }
+
+    .wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 24px;
+      height: 100%;
+    }
+
+    .content {
+      background-color: rgba(245,240,230,0.06);
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 16px rgba(20, 10, 5, 0.5);
+      max-width: 680px;
+      width: 100%;
+      animation: fadeIn 1s ease-out;
+    }
+
+    p {
+      font-size: 17px;
+      line-height: 1.6;
+      margin: 0;
+      text-align: justify;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(15px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      .content { padding: 16px; }
+      p { font-size: 15px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="content">
+      <p>
+        An <b>earthquake</b> is the violent, sudden shaking of the ground caused by the abrupt release of energy from underground, usually due to the movement of <b>tectonic plates</b> along a fault.
+      </p>
+    </div>
+  </div>
+</body>
+</html>
